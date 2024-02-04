@@ -37,7 +37,11 @@ const { Server } = require('socket.io');
 const cors = require('cors');
 const express = require('express');
 
-const io = new Server(8000, {
+// const io = new Server(8000, {
+//   cors: true,
+// });
+
+const io = new Server(process.env.PORT || 8000, {
   cors: true,
 });
 
