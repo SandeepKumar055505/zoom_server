@@ -1,2 +1,3 @@
-
-
+[build]
+  command = "npm install && node index" # Correct command to install packages and run your Node.js script
+  publish = "dist" # The directory of your static files
